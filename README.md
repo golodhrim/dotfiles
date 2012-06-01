@@ -8,7 +8,7 @@ qtile
 
 my qtile config :)
 
-![qtile screenshot](/img/2012-06-01_1600x900_qtile.png "qtile Screenshot") 
+![qtile screenshot](/golodhrim/dotfiles/raw/master/img/2012-06-01_1600x900_qtile.png "qtile Screenshot") 
 
 podgast
 =======
