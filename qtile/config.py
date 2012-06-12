@@ -107,7 +107,9 @@ keys = [
     Key([mod], "Return", lazy.spawn("urxvtc")),
     Key([mod], "Tab",    lazy.nextlayout()),
     Key([mod], "w",      lazy.window.kill()),
-
+# toggle floating
+    Key([alt], "t", lazy.window.toggle_floating()),
+    
     Key([mod, "control"], "p",      lazy.spawn(Commands.dmenu)),
     Key([], 'XF86AudioRaiseVolume', lazy.spawn(Commands.volume_up)),
     Key([mod], "equal", lazy.spawn(Commands.volume_up)),
