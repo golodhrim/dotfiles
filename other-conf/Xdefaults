@@ -1,0 +1,52 @@
+URxvt.termName: rxvt
+
+## borderless and no scrollbar
+URxvt.scrollBar_right: true
+URxvt.scrollBar: false
+URxvt.borderLess: false
+
+## the transparency stuff
+URxvt.inheritPixmap: true
+URxvt.tintColor: white
+URxvt.shading: 40
+
+## geometry and font
+URxvt.geometry: 84x24
+URxvt.font: xft:terminus:pixelsize=12
+
+## change default colors
+URxvt.background: #000000
+URxvt.foreground: #A8A8A8
+URxvt.color0: #000000
+URxvt.color1: #A80000
+URxvt.color2: #00A800
+URxvt.color3: #A85400
+URxvt.color4: #0000A8
+URxvt.color5: #A800A8
+URxvt.color6: #00A8A8
+URxvt.color7: #A8A8A8
+URxvt.color8: #545054
+URxvt.color9: #F85450
+URxvt.color10: #50FC50
+URxvt.color11: #F2FC50
+URxvt.color12: #5054F8
+URxvt.color13: #F854F8
+URxvt.color14: #50FCF8
+URxvt.color15: #F8FCF8
+
+## Settings for URLs
+URxvt.perl-lib: /home/golodhrim/.urxvt/urxvt-perls/
+URxvt.perl-ext-common: default,keyboard-select,url-select,clipboard
+URxvt.keysym.M-Escape: perl:keyboard-select:activate
+URxvt.keysym.M-s: perl:keyboard-select:search
+URxvt.keysym.M-u: perl:url-select:select_next
+URxvt.urlLauncher: google-chrome
+URxvt.underlineURLs: true
+URxvt.keysym.M-c: perl:clipboard:copy
+URxvt.keysym.M-v: perl:clipboard:paste
+URxvt.keysym.M-C-V: perl:clipboard:paste_escaped
+URxvt.copyCommand: xclip -i -selection clipboard
+URxvt.pasteCommand: xclip -o -selection clipboard
+
+## Settings for Scrolling
+URxvt.secondaryScroll: true
